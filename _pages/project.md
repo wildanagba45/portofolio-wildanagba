@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Portfolio
+permalink: /project/
 ---
 
 # My Portfolio
