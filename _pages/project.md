@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /project/
 ---
 
-# My Portfolio
+# My Project
 
 Here are some of the projects I've worked on:
 
