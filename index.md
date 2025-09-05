@@ -7,8 +7,8 @@ title: Home
 
 This is my personal website where I showcase my web development projects.
 
-- [About Me](/about)
-- [Portfolio](/project.md)
-- [Contact](/contact.md)
+- [About Me](/_pages/about)
+- [Portfolio](/_pages/project.md)
+- [Contact](/_pages/contact.md)
 
 Feel free to explore my work and reach out if you'd like to collaborate!
