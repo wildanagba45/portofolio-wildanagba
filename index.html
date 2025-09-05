@@ -55,18 +55,25 @@
                 display: flex;
                 justify-content: center;  /* Center items horizontally */
             }
-
-            .horizontal-p {
-                display: flex;
-                justify-content: center;  /* Center items horizontally */
+            
+            .horizontal-list li {
+                margin: 0 20px;  /* Memberi jarak antar link */
             }
+
+           /* Styling untuk ul horizontal (hanya untuk "The details") */
+            .horizontal-details {
+                display: flex;
+                justify-content: center; /* Menyusun item di tengah */
+            }
+
+            .horizontal-details li {
+                margin: 0 20px; /* Memberi jarak antar item */
+            }
+            
             .margin-p {
                 margin-top: 30px;  /* Menambahkan jarak dari tombol sebelumnya */
             }
 
-            .horizontal-list li {
-                margin: 0 20px;  /* Memberi jarak antar link */
-            }
 
         </style>
     </head>
@@ -77,7 +84,7 @@
         
         <p>Let’s celebrate the end of summer with a beach party under the stars!</p>
 
-        <p class="horizontal-p"><strong>The details:</strong></p>
+        <p class="horizontal-details""><strong>The details:</strong></p>
         <ul>
             <li>📍 Location: Sunset Point Beach</li>
             <li>📅 Date: Saturday, September 20, 2025</li>
