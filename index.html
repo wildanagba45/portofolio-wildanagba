@@ -10,6 +10,10 @@
                 text-align: center;
                 padding: 50px;
                 color: #333;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 100vh;  /* Ensure the body takes up full height */
             }
 
             h1 {
@@ -25,12 +29,10 @@
             ul {
                 list-style-type: none;
                 padding: 0;
-                display: flex; /* Mengatur ul untuk tampilan horizontal */
-                justify-content: center; /* Menyusun item di tengah */
             }
 
             li {
-                margin: 0 20px; /* Memberi jarak antar item */
+                margin: 10px 0;
                 font-size: 1.2em;
             }
 
@@ -52,6 +54,21 @@
                 background-color: #ff6347;
             }
 
+            /* Styling untuk ul horizontal */
+            .horizontal-list {
+                display: flex;
+                justify-content: center;  /* Center items horizontally */
+                padding: 0;
+            }
+
+            .horizontal-list li {
+                margin: 0 20px;  /* Memberi jarak antar link */
+            }
+
+            .content {
+                flex-grow: 1;  /* Ensure content section takes up remaining space */
+            }
+
         </style>
     </head>
     <body>
@@ -66,20 +83,22 @@
             <li>📍 Location: Sunset Point Beach</li>
             <li>📅 Date: Saturday, September 20, 2025</li>
             <li>🕒 Time: 4:00 PM – 10:00 PM</li>
-            <li>👗 Dress Code: Beach Casual 💬</li>
+            <li>👗 Dress Code: Beach Casual</li>
         </ul>
 
         <a href="mailto:rsvp@beachbash.com?subject=RSVP" class="rsvp-button">RSVP Now</a>
         
         <!-- Tombol ke Chatbot Gemini -->
-        <a href="https://chatbot-app-demo-wildanagba.streamlit.app/" class="chatbot-button" target="rsvp-button">Ask Gemini</a> <br>
-        
-        <p>Check out my other pages:</p>
-        <ul>
-            <li><a href="/portofolio-wildanagba/_pages/about.md">About Me</a></li> 
-            <li><a href="/portofolio-wildanagba/_pages/about.md">Contact</a></li>
-            <li><a href="/portofolio-wildanagba/_pages/project.md">Projects</a></li>
-        </ul>
+        <a href="https://chatbot-app-demo-wildanagba.streamlit.app/" class="chatbot-button" target="_blank">💬 Ask Gemini</a> <br>
+
+        <div class="content">
+            <p>Check out my other pages:</p>
+            <ul class="horizontal-list">
+                <li><a href="/portofolio-wildanagba/_pages/about.md">About Me</a></li>
+                <li><a href="/portofolio-wildanagba/_pages/about.md">Contact</a></li>
+                <li><a href="/portofolio-wildanagba/_pages/project.md">Projects</a></li>
+            </ul>
+        </div>
 
     </body>
 </html>
