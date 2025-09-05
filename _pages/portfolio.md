@@ -1,0 +1,14 @@
+---
+layout: default
+title: Portfolio
+---
+
+# My Portfolio
+
+Here are some of the projects I've worked on:
+
+1. **Beach Bonfire Bash** - A website for an event.
+2. **E-commerce Store** - A fully functional online store built with React and Node.js.
+3. **Chatbot Application** - A chatbot built using the Google Gemini API.
+
+Check out the full details of each project on the following pages.
