@@ -4,17 +4,12 @@
         <meta charset="utf-8">
         <title>Spin-off of "Project: Event invite"</title>
         <style>
-            /* 1. Update pada body untuk menggunakan Flexbox */
             body {
                 font-family: 'Arial', sans-serif;
                 background-color: #f0f8ff;
                 text-align: center;
                 padding: 50px;
                 color: #333;
-                display: flex;                     /* Menambahkan Flexbox */
-                flex-direction: column;            /* Mengatur layout vertikal */
-                justify-content: space-between;    /* Menjaga jarak antar elemen */
-                min-height: 100vh;                 /* Mengatur body agar memenuhi tinggi layar */
             }
 
             h1 {
@@ -49,30 +44,21 @@
                 font-weight: bold;
                 transition: background-color 0.3s ease;
                 margin-right: 10px;
-
-                /* 2. Lebar tetap pada tombol dan hindari perubahan ukuran */
-                width: auto;                      /* Pastikan tombol tidak melar */
-                flex-shrink: 0;                   /* Jangan biarkan tombol mengecil */
             }
 
             .rsvp-button:hover, .chatbot-button:hover {
                 background-color: #ff6347;
             }
 
-            /* 3. Styling untuk ul horizontal */
+            /* Styling untuk ul horizontal */
             .horizontal-list {
-                display: flex;                    /* Membuat daftar menjadi horizontal */
-                justify-content: center;          /* Menyusun item secara horizontal di tengah */
-                padding: 0;
+                display: flex;
+                justify-content: center;  /* Center items horizontally */
+                margin-top: 30px;  /* Menambahkan jarak dari tombol sebelumnya */
             }
 
             .horizontal-list li {
-                margin: 0 20px;                   /* Memberikan jarak antar item */
-            }
-
-            /* 4. Bagian konten di bawah */
-            .content {
-                flex-grow: 1;                     /* Membuat bagian content mengisi ruang yang tersisa */
+                margin: 0 20px;  /* Memberi jarak antar link */
             }
 
         </style>
@@ -89,21 +75,27 @@
             <li>📍 Location: Sunset Point Beach</li>
             <li>📅 Date: Saturday, September 20, 2025</li>
             <li>🕒 Time: 4:00 PM – 10:00 PM</li>
-            <li>👗 Dress Code: Beach Casual</li>
+            <li>👗 Dress Code: Beach Casual💬</li>
         </ul>
 
         <a href="mailto:rsvp@beachbash.com?subject=RSVP" class="rsvp-button">RSVP Now</a>
         
         <!-- Tombol ke Chatbot Gemini -->
-        <a href="https://chatbot-app-demo-wildanagba.streamlit.app/" class="chatbot-button" target="_blank">💬 Ask Gemini</a> <br>
+        <a href="https://chatbot-app-demo-wildanagba.streamlit.app/" class="chatbot-button" target="ask-button"> Ask Gemini</a> <br>
+        
+        <!-- Menambahkan jarak antara tombol dan halaman lain -->
+        <p>Check out my other pages:</p>
+        <ul class="horizontal-list">
+            <li><a href="/portofolio-wildanagba/_pages/about.md">About Me</a></li>
+            <li><a href="/portofolio-wildanagba/_pages/contact.md">Contact</a></li>
+            <li><a href="/portofolio-wildanagba/_pages/project.md">Projects</a></li>
+        </ul>
 
-        <!-- 5. Menambahkan bagian "Check out my other pages" -->
-        <div class="content">
-            <p>Check out my other pages:</p>
+    </body>
+</html>
+
             <ul class="horizontal-list">
-                <li><a href="/portofolio-wildanagba/_pages/about.md">About Me</a></li>
-                <li><a href="/portofolio-wildanagba/_pages/contact.md">Contact</a></li>
-                <li><a href="/portofolio-wildanagba/_pages/project.md">Projects</a></li>
+                
             </ul>
         </div>
 
