@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: portofolio's homepage
 description: Bookmark this to keep an eye on my project updates!
+
+collections:
+  pages:
+    output: true
